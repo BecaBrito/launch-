@@ -1,0 +1,27 @@
+//funções são blocos reutilizáveis
+//parâmetro, com retorno
+
+
+
+let a = 4
+let b = 5
+
+function calculoSoma(a,b){
+    let resultado=a+b
+    return resultado
+}
+
+console.log(calculoSoma(a, b))
+comsole.log(calculoSoma(10, 10))
+
+//funcao sem retorno
+let idade = 18 
+
+function maiorDeIdade(){
+    if(idade>=18){
+        console.log("Maior de Idade")
+
+    }else{
+        console.log("Menor de Idade")
+    }
+}
