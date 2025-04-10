@@ -1,0 +1,45 @@
+//Exercício 1
+let string = "João"; // String
+let num = 25; // Número
+let booleano = true; // Booleano
+
+console.log(typeof string); 
+console.log(typeof num); 
+console.log(typeof booleano); 
+
+
+//Exercício 2
+function media (r,o,t) {
+  return (r+o+t)/3
+}
+console.log(media(10,9,9.4))
+
+
+//Exercício 3
+//Não consegui realizá-lo
+
+
+
+//Exercício 4
+function dobro(a) {
+  return a*2
+}
+console.log(dobro(11))
+
+
+//Exercício 5
+function verificarMaiorIdade(idade) {
+    if (idade >= 18) {
+        console.log("É maior de idade.");
+    } else {
+        console.log("É menor de idade.");
+    }
+}
+verificarMaiorIdade(20)
+verificarMaiorIdade(17)
+verificarMaiorIdade(18)
+
+
+//Exercício 6
+const mensagem = (nome) => `Olá, boa tarde sr(a) ${nome}`
+mensagem ('Beatriz')
