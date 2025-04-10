@@ -25,3 +25,34 @@ function maiorDeIdade(){
         console.log("Menor de Idade")
     }
 }
+
+//conversao de tipos
+console.log("ano"+2025)
+console.log("3"+"5")
+
+//console explicita
+console.log(parseInt("3.5")+ parseInt("5"))//8
+
+//conversao inplica
+console.log("10"/"2")
+
+let cliente ="Maria"
+let MaiorDeIdade
+
+
+
+const idade = "14"
+const carteiraHabilitacao=true
+
+if(idade>=18 && carteiraHabilitacao){
+    console.log("Pode dirigir")
+}else{
+    console.log("Não pode dirigir")
+}
+    
+        
+    
+//console.log("Pode")
+// }else{
+   // console.log("Menor de Idade")
+//}
