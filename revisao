@@ -8,3 +8,286 @@ const carro = {
 console.log(carro.marca); 
 console.log(carro.modelo); 
 console.log(carro.ano); 
+
+
+let usuario = {
+    nome: "Fernanda",
+    email: "fernanda@email.com",
+    idade: 25
+}
+delete usuario.email
+console.log(usuario); 
+
+
+
+
+let pessoa = {
+  nome : "Claudio",
+  idade: 29
+}
+pessoa.idade = 31;
+console.log(pessoa)
+
+
+
+
+//Lista de Exercícios JavaScript
+//1. Completar a função para somar dois números
+function somar(a, b) {
+return a + b;
+}
+console.log(somar(5, 3)); // 8
+
+
+//2. Criar uma função que retorne 'Par' ou 'Ímpar'
+function parOuImpar(numero) {
+return numero % 2 === 0 ? 'Par' : 'Ímpar';
+}
+console.log(parOuImpar(4)); // 'Par'
+
+
+//3. Escreva um programa que converta metros em centímetros e milímetros.
+const metros = 2; 
+const centimetros = metros * 100;
+const milimetros = metros * 1000;
+
+console.log(metros,"metros");
+console.log(centimetros, "centímetros");
+console.log(milimetros, "milímetros");
+
+
+//4.Dado o array const frutas = ['maçã', 'banana'];, adicione as frutas 'laranja' e 'uva'
+//ao final do array, usando método.
+const frutas = ['maçã', 'banana']
+frutas.push ('laranja' , 'uva')
+console.log (frutas)
+
+
+
+//5.Considere o array const numeros = [1, 2, 3, 4, 5];. Remova o último elemento do
+//array e armazene-o em uma variável chamada ultimoNumero, usando método.
+const numeros = [1, 2, 3, 4, 5]
+const ultimoNumero = numeros.pop ()
+console.log(numeros)
+console.log(ultimoNumero)
+
+
+
+//6. Dado o array const cores = ['vermelho', 'azul', 'verde'];, remova o primeiro 
+//elemento e armazene-o em uma variável chamada primeiraCor, usando método .
+const cores = ['vermelho', 'azul', 'verde']
+const primeiraCor = cores.shift()
+console.log (cores)
+console.log (primeiraCor)
+
+
+
+//7.Com o array const animais = ['cachorro', 'gato'];, adicione os animais 'elefante' e
+//'leão' no início do array, usando método.
+const animais = ['cachorro', 'gato']
+animais.unshift('elefante','leão')
+console.log (animais)
+
+
+
+//8.Dado o array const numeros = [10, 20, 30, 40, 50];, remova os dois primeiros
+//elementos e, em seguida, adicione os números 5 e 15 nas primeiras posições,
+//usando método.
+const numeros = [10, 20, 30, 40, 50]
+
+numeros.shift();
+numeros.shift();
+numeros.unshift(15);
+numeros.unshift(5);
+
+console.log(numeros);
+
+
+
+
+//9. Considere o array const letras = ['a', 'b', 'c', 'd', 'e'];. Crie um novo array contendo
+//apenas os elementos 'b', 'c' e 'd', usando método
+const letras = ['a', 'b', 'c', 'd', 'e']
+letras.shift ()
+letras.pop ()
+console.log (letras)
+
+
+
+//10. Dado os arrays const array1 = [1, 2, 3]; e const array2 = [4, 5, 6]; crie um novo
+//array que combine os elementos de ambos, usando o método concat
+const array1 = [1, 2, 3]
+const array2 = [4, 5, 6]
+const array =array1.concat(array2)
+console.log(array)
+
+
+
+//11. Criar uma função que recebe um nome e retorna uma saudação personalizada
+const saudacao = (nome) => `Olá, boa tarde sr(a) ${nome}`
+saudacao ('Rebeca')
+
+
+
+//12. Qual a diferença entre var, let e const?
+Let= Variáveis declaradas com `let` podem ter seu valor alterado posteriormente.
+let nome = "Amanda";
+nome = "Maria";
+// retorna Maria
+
+Const= Variáveis declaradas com `const` são imutáveis, seu valor não pode ser alterado após a inicialização.
+const idade = 25;
+idade = 30; // Erro:
+Atribuição a uma variável
+constante
+
+Var= é uma forma de declarar variáveis em JavaScript.
+Ela foi muito usada antes do let e const existirem (esses chegaram com o ES6, em 2015). (chat gpt)
+
+var: antigo, escopo de função, tem hoisting
+
+let: moderno, escopo de bloco, flexível
+
+const: moderno, escopo de bloco, valor fixo (imutável) (chat gpt)
+
+
+
+//13. O que acontece quando você tenta acessar uma variável que ainda não foi definida?
+ Variável nunca declarada →
+ Dá erro: ReferenceError: is not defined
+
+ Declarada com let ou const, mas acessada antes →
+ Dá erro: ReferenceError (por causa da temporal dead zone)
+
+ Declarada com var, mas acessada antes →
+ Não dá erro, mas retorna undefined (por hoisting)(chat gpt)
+
+
+//14. Como funciona o typeof? Escreva um código usando o typeof
+const estudante ={
+    nome: "Melissa",
+    idade: 16,
+    prontuario: 12345,
+    bolsista: true,
+    telefones: ["1234-5678", "8765-4321"]
+console.log(estudante)
+    console.log(estudante.endereco.rua)
+    console.log(estudante.endereco.bairro)
+}
+console.log(typeof estudante) //verifica o tipo de dado = object
+console.log(estudante)
+
+console.log(estudante.idade)
+console.log(estudante["idade"])
+
+console.log(estudante.telefones)
+console.log(estudante.telefones[0]) //telefone no índice [0]
+
+
+
+
+
+let tarefas = ['Estudar', 'Lavar a louça', 'Fazer exercícios'];
+
+// 1. Adicione as tarefas 'Comprar pão' e 'Ler um livro' ao final da lista
+tarefas.push('Comprar pão', 'Ler um livro');
+
+// 2. Remova a última tarefa da lista e armazene em uma variável chamada ultimaTarefa
+let ultimaTarefa = tarefas.pop();
+
+// 3. Adicione 'Acordar cedo' e 'Tomar café' no início da lista
+tarefas.unshift('Acordar cedo', 'Tomar café');
+
+// 4. Remova a primeira tarefa da lista e salve em uma variável chamada primeiraTarefa
+let primeiraTarefa = tarefas.shift();
+
+// 5. Substitua as duas primeiras tarefas por 'Fazer café da manhã' e 'Organizar a mesa'
+tarefas.splice(0, 2, 'Fazer café da manhã', 'Organizar a mesa');
+
+// 6. Crie um novo array com as tarefas da posição 1 até 3 (inclusive 3)
+let tarefasSelecionadas = tarefas.slice(1, 4); // o índice final é exclusivo
+
+// 7. Crie uma nova lista que combine as tarefas atuais com ['Ver um filme', 'Descansar']
+let tarefasCompletas = tarefas.concat(['Ver um filme', 'Descansar']);
+
+console.log("Lista original de tarefas:", tarefas);
+console.log("Última tarefa removida:", ultimaTarefa);
+console.log("Primeira tarefa removida:", primeiraTarefa);
+console.log("Tarefas selecionadas:", tarefasSelecionadas);
+console.log("Lista final de tarefas:", tarefasCompletas);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
