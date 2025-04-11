@@ -33,7 +33,7 @@ console.log(notas)
 notas.shift()
 console.log(notas)
 
-//método slice
+//método slice- Extrai uma parte do array sem modificar o original
 //slice(ínicio, fim)
 const listaDeEstudantes =['João', 'Juliana', 'Ana', 'Caio', 'Lara', 
     'Aline', 'Guilherme', 'Carlos', 'Paulo', 'Renata'
