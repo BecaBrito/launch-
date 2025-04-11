@@ -1,0 +1,10 @@
+const carro = {
+    const carro.marca = ['Chevrolet']
+    const carro.modelo = ['Sedan']
+    const carro.ano = ['2000']
+
+};
+
+console.log(carro.marca); 
+console.log(carro.modelo); 
+console.log(carro.ano);  
